@@ -12,7 +12,11 @@ package katafizzbuzz;
 public class FizzBuzz {
     
     public String getFizzBuzz(int n){
-        String resultado=String.valueOf(n);  
+        String resultado=String.valueOf(n); 
+        String textoNumero = resultado;
+        if(textoNumero.contains("3")){
+            resultado = "Fizz";
+        }
         if (n%3==0 && n%5==0){
             resultado = "FizzBuzz";
         }
