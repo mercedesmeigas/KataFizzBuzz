@@ -12,8 +12,11 @@ package katafizzbuzz;
 public class FizzBuzz {
     
     public String getFizzBuzz(int n){
-        String resultado=String.valueOf(n);        
-        if (n%3==0){
+        String resultado=String.valueOf(n);  
+        if (n%3==0 && n%5==0){
+            resultado = "FizzBuzz";
+        }
+        else if (n%3==0){
             resultado = "Fizz";
         }
         else if (n%5==0){
