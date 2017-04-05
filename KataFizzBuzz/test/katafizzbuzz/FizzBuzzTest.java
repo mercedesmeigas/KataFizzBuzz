@@ -38,10 +38,17 @@ public class FizzBuzzTest {
         assertEquals("Fizz",result);
     }
     
-     @Test
-     public void testFizzBuzzDeTresMultiploDevuelveFizz() {
+    @Test
+    public void testFizzBuzzDeTresMultiploDevuelveFizz() {
         FizzBuzz fb = new FizzBuzz();
         String result = fb.getFizzBuzz(6);
         assertEquals("Fizz",result);
+    }
+     
+    @Test
+    public void testFizzBuzzDeCincoMultiploDevuelveFizz() {
+        FizzBuzz fb = new FizzBuzz();
+        String result = fb.getFizzBuzz(10);
+        assertEquals("Buzz",result);
     }
 }
