@@ -13,7 +13,7 @@ public class FizzBuzz {
     
     public String getFizzBuzz(int n){
         String resultado=String.valueOf(n);        
-        if (n==3){
+        if (n%3==0){
             resultado = "Fizz";
         }    
         return resultado;
