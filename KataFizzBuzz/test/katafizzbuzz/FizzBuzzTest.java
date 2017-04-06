@@ -16,14 +16,24 @@ public class FizzBuzzTest {
     
     public FizzBuzzTest() {
     }
-    
+
+
     @Test
-    public void testFizzBuzzDeTresDevuelveFizz() {
+    public void testFizzBuzzDeContiene7DevuelveRezz() {
         FizzBuzz fb = new FizzBuzz();
-        String result = fb.getFizzBuzz(3);
-        assertEquals("Fizz",result);
+        String result = fb.getFizzBuzz(72);
+        assertEquals("Rezz",result);
     }
     
+    @Test
+    public void testFizzBuzzDeSieteMultiploDevuelveRezz() {
+        FizzBuzz fb = new FizzBuzz();
+        String result = fb.getFizzBuzz(14);
+        assertEquals("Rezz",result);
+    }
+
+    
+
     @Test
     public void testFizzBuzzDeTresMultiploDevuelveFizz() {
         FizzBuzz fb = new FizzBuzz();
@@ -37,4 +47,5 @@ public class FizzBuzzTest {
         String result = fb.getFizzBuzz(13);
         assertEquals("Fizz",result);
     }
+
 }

@@ -14,6 +14,19 @@ public class FizzBuzz {
     public String getFizzBuzz(int n){
         String resultado=String.valueOf(n); 
         String textoNumero = resultado;
+
+        
+        // Comprobamos si contiene número.
+        if(textoNumero.contains("7")){
+            resultado = "Rezz";
+        }
+        
+        // Comprobamos si es múltiplo de número.
+        if (n%7==0) {
+            resultado = "Rezz";
+        }
+        
+
         if(textoNumero.contains("3")){
             resultado = "Fizz";
         }
@@ -21,6 +34,7 @@ public class FizzBuzz {
             resultado = "Fizz";
         }
         
+
         return resultado;
         
     }
