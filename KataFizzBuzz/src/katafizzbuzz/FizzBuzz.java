@@ -17,15 +17,10 @@ public class FizzBuzz {
         if(textoNumero.contains("3")){
             resultado = "Fizz";
         }
-        if (n%3==0 && n%5==0){
-            resultado = "FizzBuzz";
-        }
-        else if (n%3==0){
+        if (n%3==0){
             resultado = "Fizz";
         }
-        else if (n%5==0){
-            resultado = "Buzz";
-        }
+        
         return resultado;
         
     }
