@@ -14,8 +14,12 @@ public class FizzBuzz {
     public String getFizzBuzz(int n){
         String resultado=String.valueOf(n); 
         String textoNumero = resultado;
+        
         if(textoNumero.contains("3")){
             resultado = "Fizz";
+        }
+        if(textoNumero.contains("5")){
+            resultado = "Buzz";
         }
         if (n%3==0 && n%5==0){
             resultado = "FizzBuzz";
