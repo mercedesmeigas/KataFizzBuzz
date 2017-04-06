@@ -14,6 +14,7 @@ public class FizzBuzz {
     public String getFizzBuzz(int n){
         String resultado=String.valueOf(n); 
         String textoNumero = resultado;
+
         
         // Comprobamos si contiene número.
         if(textoNumero.contains("7")){
@@ -25,6 +26,15 @@ public class FizzBuzz {
             resultado = "Rezz";
         }
         
+
+        if(textoNumero.contains("3")){
+            resultado = "Fizz";
+        }
+        if (n%3==0){
+            resultado = "Fizz";
+        }
+        
+
         return resultado;
         
     }
